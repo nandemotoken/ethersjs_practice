@@ -1,0 +1,16 @@
+const torus = await new Torus({
+  buttonPosition: "top-left" // default: 'bottom-left'
+});
+
+
+await torus.init({
+  network: {
+    host: "matic" // mandatory
+  },
+  showTorusButton: true // default: true
+});
+
+
+const provider = new ethers.providers.Web3Provider(torus.provider)
+
+
