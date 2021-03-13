@@ -11,6 +11,10 @@ await torus.init({
 });
 
 
-const provider = new ethers.providers.Web3Provider(torus.provider)
+const provider = new ethers.providers.Web3Provider(torus.provider);
 
+
+const signer = provider.getSigner();
+
+console.log(signer.getAddress() );
 
