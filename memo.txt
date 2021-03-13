@@ -16,5 +16,6 @@ const provider = new ethers.providers.Web3Provider(torus.provider);
 
 const signer = provider.getSigner();
 
-console.log(signer.getAddress() );
+const add = await signer.getAddress();
 
+console.log(add)
